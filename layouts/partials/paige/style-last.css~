@@ -1,0 +1,5 @@
+body {
+    background: linear-gradient(to bottom, lightblue, white);
+    min-height: 100vh; /* Ensure it covers the full height */
+    margin: 0; /* Remove default margin */
+}

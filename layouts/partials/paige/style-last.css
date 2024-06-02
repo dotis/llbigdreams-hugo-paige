@@ -1,0 +1,10 @@
+body {
+    color: #1E6675;
+    background: linear-gradient(to bottom, #72B6C5, #EEEFE3);
+    min-height: 100vh; /* Ensure it covers the full height */
+    margin: 0; /* Remove default margin */
+}
+
+#paige-content {
+    background-color: #EEF0E3;
+}

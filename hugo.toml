@@ -1,10 +1,7 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
-
-[[module.imports]]
-  path = "github.com/willfaught/paige"
-
+theme = "paige"
 
 [languages.en]
 weight = 10
@@ -27,3 +24,16 @@ identifier = "search"
 name = "Search"
 url = "/search/"
 weight = 40
+
+[params]
+  test_param = "Config is working"
+  paige.style = "body {background: linear-gradient(to bottom, lightblue, white); min-height: 100vh; /* Ensure it covers the full height */ margin: 0; /* Remove default margin */}"
+
+[paige]
+  color = "#0d6efd" # Bootstrap primary color and theme color for Safari and Windows
+  color_scheme = "auto" # Must be "auto", "dark", or "light"
+  external_link_new_tab = false # Open external links in new tabs
+  math = false # Enable math typesetting
+  site_title = "" # Appears above the menu, above the site description, if set
+  site_description = "" # Appears above the menu, below the site title, if set
+  style =  "body {background: linear-gradient(to bottom, lightblue, white); min-height: 100vh; /* Ensure it covers the full height */ margin: 0; /* Remove default margin */}"
