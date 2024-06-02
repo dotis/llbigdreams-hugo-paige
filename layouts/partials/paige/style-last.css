@@ -7,4 +7,19 @@ body {
 
 #paige-content {
     background-color: #EEF0E3;
+    margin: 20px; /* Adjust the margin as needed */
+    padding: 20px; /* Add padding inside the div */
+    border-radius: 10px; /* Adjust the border radius as needed for rounded corners */
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+h1 {
+    color: #BA205E
 }
