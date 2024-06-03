@@ -1,3 +1,7 @@
+# ubuntu backup copies
+*~
+
+# hugo files:
 .hugo_build.lock
 public/
 resources/
