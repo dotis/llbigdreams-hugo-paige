@@ -31,7 +31,7 @@ Many of Michael Law’s friends and family have pulled together to create an org
     maxwidth=""
     process=""
     sizes=""
-    src="/portrait.webp"
+    src="./portrait.webp"
     srcset=""
     style="float: right; margin-left: 20px;"
     title=""
