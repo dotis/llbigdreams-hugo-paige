@@ -14,16 +14,34 @@ weight = 10
 
 
 [[languages.en.menu.main]]
-identifier = "tags"
-name = "Tags"
-url = "/tags/"
+identifier = "community_impact"
+name = "Community Impact"
+url = "/community_impact/"
+weight = 20
+
+[[languages.en.menu.main]]
+identifier = "stumpy_golf_tournament"
+name = "Stumpy Golf Tournament"
+url = "/stumpy_golf_tournament/"
 weight = 30
 
 [[languages.en.menu.main]]
-identifier = "search"
-name = "Search"
-url = "/search/"
+identifier = "contact_us"
+name = "Contact Us"
+url = "/contact_us/"
 weight = 40
+
+[[languages.en.menu.main]]
+identifier = "donate"
+name = "Donate"
+url = "/donate/"
+weight = 50
+
+[[languages.en.menu.main]]
+identifier = "who_we_are"
+name = "Who We Are"
+url = "/who_we_are/"
+weight = 60
 
 [paige]
   color = "#1E6675" # Bootstrap primary color and theme color for Safari and Windows
