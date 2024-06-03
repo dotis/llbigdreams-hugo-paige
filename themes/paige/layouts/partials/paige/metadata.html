@@ -1,0 +1,79 @@
+{{ $page := . }}
+
+{{ $authors := partial "paige/authors.html" $page }}
+{{ $categories := $page.GetTerms "categories" }}
+{{ $commiturl := "" }}
+{{ $date := $page.PublishDate }}
+{{ $dateformat := $page.Param "paige.date.format" | default ":date_long" }}
+{{ $description := $page.Description | markdownify }}
+{{ $link := $page.Params.link }}
+{{ $readingtime := $page.ReadingTime }}
+{{ $series := $page.GetTerms "series" }}
+{{ $tags := $page.GetTerms "tags" }}
+{{ $title := $page.Title | markdownify }}
+
+{{ if and ($page.Param "paige.git.commit_url") $page.GitInfo }}
+    {{ $commiturl = printf ($page.Param "paige.git.commit_url") $page.GitInfo.Hash }}
+{{ end }}
+
+<div class="mw-100" id="paige-metadata">
+    {{ with $title }}
+        <h1 class="fw-bold text-center" id="paige-title">{{ if $link }}<a href="{{ $link }}">{{ . }}</a>{{ else }}{{ . }}{{ end }}</h1>
+    {{ end }}
+
+    {{ with $description }}
+        <p class="lead text-center" id="paige-description">{{ . }}</p>
+    {{ end }}
+
+    {{ if or $authors $categories $date $readingtime $series $tags }}
+        <div class="mb-3">
+            {{ if or $categories $tags }}
+                <p class="mb-0 text-center text-secondary" id="paige-keywords">
+                    {{ range $i, $term := sort (append $categories $tags) "LinkTitle" -}}
+                        {{- if gt $i 0 }} · {{ end -}}
+
+                        <a class="link-secondary" href="{{ .RelPermalink | safeURL }}">{{ .Title }}</a>
+                    {{- end }}
+                </p>
+            {{ end }}
+
+            {{ with $series }}
+                <p class="mb-0 text-center text-secondary" id="paige-series">
+                    {{ range $i, $series := . -}}
+                        {{- if gt $i 0 }} · {{ end -}}
+
+                        <a class="link-secondary" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    {{- end }}
+                </p>
+            {{ end }}
+
+            {{ with $authors }}
+                <p class="mb-0 text-center text-secondary" id="paige-authors">
+                    {{ range $i, $author := . -}}
+                        {{- if gt $i 0 }} · {{ end -}}
+
+                        <a class="link-secondary" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    {{- end }}
+                </p>
+            {{ end }}
+
+            {{ with $date }}
+                <p class="mb-0 text-center text-secondary" id="paige-date">
+                    {{ with $commiturl }}
+                        <a class="link-secondary" href="{{ . }}" {{ with partial "paige/target.html" (dict "page" $page "url" .) }} target="{{ . }}" {{ end }}>
+                    {{ end }}
+
+                    <time datetime="{{ .Format `2006-01-02` }}">{{ time.Format $dateformat . }}</time>
+
+                    {{ if $commiturl }}
+                        </a>
+                    {{ end }}
+                </p>
+            {{ end }}
+
+            {{ with $readingtime }}
+                <p class="mb-0 text-center text-secondary" id="paige-reading-time">{{ . }} {{ i18n "paige_minutes" . }}</p>
+            {{ end }}
+        </div>
+    {{ end }}
+</div>
