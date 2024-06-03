@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://7yl4r.github.io/llbigdreams-hugo-paige/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Little Laws Big Dreams'
 theme = "paige"
 
 [languages.en]
