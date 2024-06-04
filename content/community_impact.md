@@ -9,27 +9,8 @@ Through supporting community improvement it is our belief other young entreprene
 In doing so, the town’s history and natural beauty can be preserved, and Michael’s spirit will become everlasting. 
 Little Laws Big Dreams currently supports an endowed scholarship fund in Michael's name at SUNY Cobleskill.
 
-{{< paige/gallery
-    align=""
-    breakpoints=false
-    class=""
-    densities=""
-    fetchpriority=""
-    height=""
-    images="./community_impact_gallery/*"
-    justify=""
-    linked=""
-    loading=""
-    maxheight=""
-    maxwidth=""
-    process=""
-    style=""
-    type=""
-    width="" >}}
 
-{{< /paige/gallery >}}
-
-
+{{< paige/gallery breakpoints=true images="*jpg" type="rows" maxheight="10rem" linked="default"/>}}
 
 # Where we give:
 
