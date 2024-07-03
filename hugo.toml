@@ -28,7 +28,7 @@ weight = 30
 [[languages.en.menu.main]]
 identifier = "contact_us"
 name = "Contact Us"
-url = "/contact_us/"
+url = "/contact/"
 weight = 40
 
 [[languages.en.menu.main]]
