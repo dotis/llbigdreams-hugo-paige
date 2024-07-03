@@ -12,7 +12,6 @@
 {{ $future := and $page.PublishDate (gt $page.PublishDate now) }}
 {{ $modified := and $page.PublishDate $page.Lastmod (lt $page.PublishDate $page.Lastmod) }}
 {{ $pinned := $page.Params.paige.pin }}
-{{ $readingtime := $page.ReadingTime }}
 {{ $series := $page.GetTerms "series" }}
 {{ $summary := $page.Summary | markdownify | plainify | htmlUnescape }}
 {{ $tags := $page.GetTerms "tags" }}
@@ -103,7 +102,4 @@
         </p>
     {{ end }}
 
-    {{ with $readingtime }}
-        <p class="mb-0 paige-reading-time text-center text-secondary">{{ . }} {{ i18n "paige_minutes" . }}</p>
-    {{ end }}
 </div>
