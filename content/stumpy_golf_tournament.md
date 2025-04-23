@@ -2,8 +2,8 @@ This year marks the 22nd Stumpy Cup, which will be held at the Cobleskill Golf a
 
  
 
-Stumpy Cup 22
-* Saturday, July 20, 2024
+Stumpy Cup 23
+* Saturday, July 19, 2025
 * Lunch & Registration open at 11:30 AM
 * Shotgun Start at 1:30 PM
 * Includes: 18-hole Scramble golf tournament, lunch, tournament t-shirt
