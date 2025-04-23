@@ -43,7 +43,7 @@ Now in its 21st year, the Stumpy Cup raises money for a scholarship fund in Mich
 To date, nearly $42,000 has been donated to support local efforts. 
 All proceeds from the Stumpy Cup go to an endowed scholarship fund in Michael's name at SUNY Cobleskill.
 
-This year's tournament will be held in Cobleskill, NY on July 20th, 2024. 
+This year's tournament will be held in Cobleskill, NY on July 19th, 2025. 
 Click [HERE](https://forms.gle/ryDWpW3bkQw5NHBR7) to register.
 
 
