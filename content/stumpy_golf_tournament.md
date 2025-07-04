@@ -33,8 +33,4 @@ c/o Sally Law
 Cobleskill, NY 12043
 ```
 
-{{< paige/image
-    alt="Stumpy Cup 2022"
-    src="./stumpy_golf_tournament_22.webp"
->}}
 
