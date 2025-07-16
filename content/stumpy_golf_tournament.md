@@ -1,4 +1,4 @@
-This year marks the 22nd Stumpy Cup, which will be held at the Cobleskill Golf and Country Club.
+This year marks the 23rd Stumpy Cup, which will be held at the Cobleskill Golf and Country Club.
 
  
 
