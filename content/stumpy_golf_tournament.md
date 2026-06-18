@@ -32,8 +32,5 @@ c/o Sally Law
 160 Borst Noble Road
 Cobleskill, NY 12043
 ```
-{{< paige/image
-    alt="Stumpy Cup 2022"
-    src="./SC24_poster.JPG"
->}}
 
+<img src="./SC24_poster.JPG" width="100%" alt="Stumpy Cup 2022"/>
