@@ -33,4 +33,4 @@ c/o Sally Law
 Cobleskill, NY 12043
 ```
 
-<img src="./SC24_poster.JPG" width="100%" alt="Stumpy Cup 2022"/>
+<img src="./SC24_poster.JPG" alt="SC24 Poster" style="width:100%;">
