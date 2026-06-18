@@ -33,4 +33,4 @@ c/o Sally Law
 Cobleskill, NY 12043
 ```
 
-<img src="./SC24_poster.JPG" alt="SC24 Poster" style="width:100%;">
+![SC24 Poster](SC24_poster.JPG){width=100%}
